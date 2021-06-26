@@ -14,10 +14,7 @@ const App = () => {
   // sync up with, if any.
   useEffect(() => {
     axios("https://swapi.dev/api/people")
-      .then((request) => {
-        setCharacters(request.data);
-        console.log(request);
-      })
+      .then((request) => setCharacters(request.data))
       .catch((error) => console.log(error));
   }, []);
 
