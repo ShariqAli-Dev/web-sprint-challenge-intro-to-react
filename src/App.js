@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
-
+import styled from "styled-components";
 import Characters from "./components/Characters";
+
+const Title = styled.div`
+  color: rgb(243, 157, 59);
+  text-shadow: 1px 1px 5px rgb(30, 62, 136);
+  font-size: 4rem;
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -20,7 +26,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Star Wars Characters</h1>
+      <Title class="Header">Star Wars Characters</Title>
       <Characters characters={characters} />
     </div>
   );
