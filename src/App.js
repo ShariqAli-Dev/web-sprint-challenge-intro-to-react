@@ -4,10 +4,16 @@ import "./App.css";
 import styled from "styled-components";
 import Characters from "./components/Characters";
 
-const Title = styled.div`
-  color: rgb(243, 157, 59);
-  text-shadow: 1px 1px 5px rgb(30, 62, 136);
-  font-size: 4rem;
+const StyledApp = styled.div`
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+
+  h1 {
+    color: rgb(243, 157, 59);
+    text-shadow: 1px 1px 5px rgb(30, 62, 136);
+    font-size: 4rem;
+  }
 `;
 
 const App = () => {
@@ -25,10 +31,10 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
-      <Title class="Header">Star Wars Characters</Title>
+    <StyledApp>
+      <h1>Star Wars Characters</h1>
       <Characters characters={characters} />
-    </div>
+    </StyledApp>
   );
 };
 
