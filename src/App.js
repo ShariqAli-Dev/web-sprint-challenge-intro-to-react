@@ -5,14 +5,14 @@ import styled from "styled-components";
 import Characters from "./components/Characters";
 
 const StyledApp = styled.div`
-  text-align: center;
-  width: 80vw;
-  margin: auto;
+  text-align: ${(pr) => pr.theme.app.textAlignment};
+  width: ${(pr) => pr.theme.app.width};
+  margin: ${(pr) => pr.theme.app.margin};
 
   h1 {
-    color: rgb(243, 157, 59);
-    text-shadow: 1px 1px 5px rgb(30, 62, 136);
-    font-size: 4rem;
+    color: ${(pr) => pr.theme.title.primaryColor};
+    text-shadow: ${(pr) => pr.theme.title.shadowColor};
+    font-size: ${(pr) => pr.theme.title.fontSize};
   }
 `;
 
