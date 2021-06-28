@@ -2,23 +2,23 @@ import React from "react";
 import styled from "styled-components";
 
 const CharacterDiv = styled.div`
-  margin: ${(pr) => pr.theme.characterDiv.margin};
-  padding: ${(pr) => pr.theme.characterDiv.padding};
-  border: ${(pr) => pr.theme.characterDiv.border};
+  margin: 5%;
+  padding: 2.5%;
+  border: solid rgb(57, 19, 119) 2px;
 
   h2 {
-    font-size: ${(pr) => pr.theme.characterName.fontSize};
-    color: ${(pr) => pr.theme.characterName.color};
-    display: ${(pr) => pr.theme.characterName.display};
+    font-size: 2rem;
+    color: rgb(239, 179, 241);
+    display: inline-block;
   }
 
   h3 {
-    color: ${(pr) => pr.theme.characterAge.secondaryColor};
-    float: ${(pr) => pr.theme.characterAge.float};
-    background-color: ${(pr) => pr.theme.characterAge.primaryColor};
-    display: ${(pr) => pr.theme.characterAge.display};
-    padding: ${(pr) => pr.theme.characterAge.padding};
-    border-radius: ${(pr) => pr.theme.characterAge.borderRadius};
+    color: 1px 1px 5px rgb(30, 62, 136);
+    float: right;
+    background-color: rgb(243, 157, 59);
+    display: inline-block;
+    padding: 2%;
+    border-radius: 40%;
   }
 `;
 
