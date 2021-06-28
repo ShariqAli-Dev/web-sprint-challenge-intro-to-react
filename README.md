@@ -87,6 +87,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
    A component state can be similarly described as a variable. However, depending on user input, each component woll have a different state depending on what the variable currently is. This can go from a state of 0 to 10 or even 10000 and so on.
 
 3. Describe props.
-    A prop is a property that is assigned to a component. This can be passed down from parent components to all of their child components. This can be in the form of a variable on any state, to be used in functions and operations within each component.
+   A prop is a property that is assigned to a component. This can be passed down from parent components to all of their child components. This can be in the form of a variable on any state, to be used in functions and operations within each component.
 
 4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+   Side effects are a seperate function that occurs only after the dom has rendered, changed, or altered in any way. You can sync this to certain states and props my sending the the argument of such as inside of an array. This allows powerful use and change states.
