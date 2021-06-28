@@ -81,6 +81,12 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-1. Describe component state.
-1. Describe props.
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+   React is splits your javascript into components that each do their own thing. React works more efficient than the traditional seperate html and js files. The decrease in latency and increase in efficiency is not something to be ignored.
+
+2. Describe component state.
+   A component state can be similarly described as a variable. However, depending on user input, each component woll have a different state depending on what the variable currently is. This can go from a state of 0 to 10 or even 10000 and so on.
+
+3. Describe props.
+    A prop is a property that is assigned to a component. This can be passed down from parent components to all of their child components. This can be in the form of a variable on any state, to be used in functions and operations within each component.
+
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
